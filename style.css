@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header-top{
+    display: flex;
+    padding: 6px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-top a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.header-top a:hover{
+    text-decoration: underline;
+}
+.header-top i, .header-top .user-icon i{
+    padding: 12px;
+}
+
+.header-top a > i{
+    border: 1px solid transparent;
+}
+
+.header-top a > i:hover{
+    border: 1px solid transparent;
+    background-color: rgba(60,64,67,.08);
+    border-radius: 25px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+}
+
+main img{
+    width: auto;
+    height: 120px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+main .search-input{
+    padding-bottom: 18px;
+    position: relative;
+}
+
+main .search-input input:focus-visible{
+    outline: none;
+}
+
+main .search-input input{
+    width: 584px;
+    height: 48px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    position: relative;
+    padding: 0 25px 0 30px;
+}
+
+main .search-input input:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+main .search-input .search-icon{
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+    padding-right: 5px
+}
+
+main .search-input .mic-icon{
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+}
+
+main .buttons button{
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding: 0 16px;
+    line-height: 35px;
+    margin: 11px 4px;
+}
+
+main .buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 0 20px;
+}
+
+footer .footer-right{
+    padding-right: 35px;
+}
+
+footer .footer-left a, footer .footer-right a{
+    text-decoration: none;
+    color: #70757a;
+    padding: 15px;
+    display: inline-block;
+}
+
+footer .footer-left a:hover, footer .footer-right a:hover{
+    text-decoration: underline;
+}
